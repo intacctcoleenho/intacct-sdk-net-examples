@@ -15,7 +15,7 @@
 
 using System;
 using System.Threading.Tasks;
-using Intacct.SDK.Xml;
+using Intacct.SDK.Rest;
 using ILogger = Microsoft.Extensions.Logging.ILogger;
 
 namespace Intacct.Examples
