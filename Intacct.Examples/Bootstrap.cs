@@ -13,6 +13,7 @@
  * permissions and limitations under the License.
  */
 
+using System;
 using System.IO;
 using Intacct.SDK;
 using Microsoft.Extensions.Logging;
@@ -40,6 +41,12 @@ namespace Intacct.Examples
             OnlineClient client = new OnlineClient(clientConfig);
             
             return client;
+        }
+
+        public static String getToken()
+        {
+            return
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRJZCI6ImQ0ZjJiNmIzMTgxNzRiOWE2MGE3LklOVEFDQ1QuYXBwLnNhZ2UuY29tIiwic2Vzc2lvbklkIjoidTExSWNFbk9aTzhhLVVaUFhLWDI5U0NwN3h2OVJnLi4iLCJlbmRwb2ludCI6Imh0dHBzOlwvXC9kZXYwOS5pbnRhY2N0LmNvbVwvdXNlcnNcL2Nob1wvc3JjLmFwaWludGdcL2FwaSIsImNueUlkIjoidXRiX3NpbXBsZV9tdjEifQ.FBu0dvD4x9KyKusAuQJq2GtGsNPu8WWy0StiwOhUibM";
         }
     }
 }

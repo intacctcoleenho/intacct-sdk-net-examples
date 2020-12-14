@@ -42,10 +42,11 @@ namespace Intacct.Examples
             Console.WriteLine(" 3 - List vendors (legacy)");
             Console.WriteLine(" 4 - CRUD customer");
             Console.WriteLine(" 5 - Custom object function");
-            Console.WriteLine(" 6 - Exit program");
+            Console.WriteLine(" 6 - REST Getting started");
+            Console.WriteLine(" 7 - Exit program");
 
             string option = "";
-            while (option != "6")
+            while (option != "7")
             {
                 Console.WriteLine("");
                 Console.Write("Enter a number to run the example > ");
@@ -73,6 +74,9 @@ namespace Intacct.Examples
                                 CustomObjectFunction.Run(logger);
                                 break;
                             case "6":
+                                RestGettingStarted.Run(logger);
+                                break;
+                            case "7":
                                 Console.WriteLine("Exiting...");
                                 LogManager.Shutdown();
                                 break;
